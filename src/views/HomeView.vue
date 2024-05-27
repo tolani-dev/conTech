@@ -22,6 +22,7 @@
       <img src="/src/assets/icons/divider4.svg" alt="divider" class="hidden lg:block" />
     </section>
     <section class="h-full relative rectangle bg-primary">
+      <!-- <iframe src="https://docs.gle.com/forms/d/e/1FAIpQLSf4BhQ2Xx1fY_JvjSHjEj1_tUoRYI0fFzAOP-QW5B/viewform?embedded=true" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
       <div class="relative flex justify-center items-center flex-col w-[80%] md:w-[70%] lg:w-[50%] m-auto pt-[120px] sm:pt-[100px]">
         <h3 class="font-extrabold sm:font-bold text-2xl md:text-4xl lg:text-5xl leading-10 text-[#0C0C0C] mb-10 sm:mb-10">
           What is ConTech Nigeria About?
