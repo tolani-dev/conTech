@@ -1,29 +1,27 @@
 <template>
-  <main class="">
     <!-- header -->
-    <section class="bg-primary w-full h-full pt-[150px] md:pt-[200px] lg:pb-[10px] relative -z-10">
+    <section class="bg-primary w-full h-full pt-[150px] md:pt-[200px] lg:pb-[10px] relative">
       <div class="m-auto w-[90%] lg:w-[60%] text-white">
-        <img src="/src/assets/icons/Capa_3.svg" alt="capa" class="absolute top-[10.5vh] left-[16.5vw]" />
+        <img src="/src/assets/icons/Capa_3.svg" alt="capa" class="animate__animated  animate__pulse animate__infinite hidden lg:block lg:absolute top-[10.5vh] left-[16.5vw]" />
         <h4 class="text-[40px] sm:text-[50px] md:text-[60px] font-bold m-auto leading-10 md:leading-[77px] sm:text-center">
           The largest convergence of Tech Disruptors in the AEC industry in Nigeria.
         </h4>
-        <img src="/src/assets/icons/Capa_1.svg" alt="capa" class="absolute top-[25vh] right-[2vw]" />
-        <img src="/src/assets/icons/Capa_2.svg" alt="capa" class="absolute top-[60vh] left-[2vw]" />
-        <!-- <img src="/src/assets/icons/Capa_4.svg" alt="capa" class="absolute bottom-[40vh] left-[2vw]" /> -->
+        <img src="/src/assets/icons/Capa_1.svg" alt="capa" class="animate__animated  animate__pulse animate__infinite hidden lg:block lg:absolute top-[25vh] right-[2vw]" />
+        <img src="/src/assets/icons/Capa_2.svg" alt="capa" class="animate__animated  animate__pulse animate__infinite hidden lg:block lg:absolute top-[60vh] left-[2vw]" />
+        <!-- <img src="/src/assets/icons/Capa_4.svg" alt="capa" class="animate__animated  animate__pulse animate__infinite hidden lg:block lg:absolute bottom-[40vh] left-[2vw]" /> -->
       </div>
       <!-- button -->
       <div class="sm:flex justify-center mt-[40px] md:mt-[80px] lg:my-10 gap-10">
-        <button class="rounded-lg bg-secondary px-8 py-2 ml-9 sm:ml-0 mb-4 sm:mb-0"><span>Register</span></button>
-        <button class="rounded-lg border-[1px] border-secondary px-8 py-2 text-secondary ml-3 sm:ml-0"><span>For Sponsorship</span></button>
+        <button @click="registerBtn" class="rounded-lg bg-secondary px-8 py-2 ml-9 sm:ml-0 mb-4 sm:mb-0"><span>Register</span></button>
+        <button @click="goToSponsor('sponsors')" class="rounded-lg border-[1px] border-secondary px-8 py-2 text-secondary ml-3 sm:ml-0"><span>For Sponsorship</span></button>
       </div>
       <div class="flex m-auto asset w-[70vw] sm:w-[70vw] lg:w-[50vw] xl:w-[50vw] sm:h-[30vh] md:h-[40vh] h-[30vh] mt-5 sm:mt-10 md:p-12 lg:p-0">
         <img src="/src/assets/icons/Groupwords.svg" alt="words" class="w-fit" />
       </div>
       <img src="/src/assets/icons/divider4.svg" alt="divider" class="hidden lg:block" />
     </section>
-    <section class="h-full relative rectangle bg-primary">
-      <!-- <iframe src="https://docs.gle.com/forms/d/e/1FAIpQLSf4BhQ2Xx1fY_JvjSHjEj1_tUoRYI0fFzAOP-QW5B/viewform?embedded=true" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
-      <div class="relative flex justify-center items-center flex-col w-[80%] md:w-[70%] lg:w-[50%] m-auto pt-[120px] sm:pt-[100px]">
+    <section class="lg:h-screen relative rectagle bg-secondary-shades pb-10">
+      <div class="relative flex justify-center items-center flex-col w-[80%] md:w-[70%] lg:w-[50%] m-auto pt-[50px] sm:pt-[100px]">
         <h3 class="font-extrabold sm:font-bold text-2xl md:text-4xl lg:text-5xl leading-10 text-[#0C0C0C] mb-10 sm:mb-10">
           What is ConTech Nigeria About?
         </h3>
@@ -45,8 +43,10 @@
       </div>
       <!-- <img src="/src/assets/icons/divider2.svg" alt="divider2" class="hidden lg:block lg:absolute bottom-[-10%] sm:top-[20%] sm:left-[-0%]" /> -->
     </section>
-    <section class="bg-primary pt-[100x]">
-      <div class="flex justify-center items-center flex-col w-[80%] lg:w-[50%] m-auto pt-[120px] sm:pt-[100px]">
+    <section class="bg-primary pt-[100x] relative">
+      <img src="/src/assets/icons/Capa_6.svg" alt="capa" class="animate__animated  animate__pulse animate__infinite hidden lg:block lg:absolute top-[25vh] right-0" />
+        <img src="/src/assets/icons/Hexagon_2.svg" alt="capa" class="animate__animated  animate__pulse animate__infinite hidden lg:block lg:absolute top-[60vh] left-0" />
+      <div class="flex justify-center items-center flex-col w-[80%] lg:w-[50%] m-auto pt-[50px] sm:pt-[100px]">
         <h3 class="font-bold text-2xl md:text-4xl lg:text-5xl leading-10 text-[#EDEBF4] mb-10">ConTech Nigeria is aimed
           at</h3>
         <p class="text-[#EDEBF4] mb-10">This inaugural event brings together innovative minds, industry experts and
@@ -95,12 +95,12 @@
           <!-- <img src="/src/assets/icons/Grouptext.svg" alt="img" class="" /> -->
         </div>
         <div class="my-10">
-          <button class="rounded-lg bg-secondary px-8 py-2"><span>Register</span></button>
+          <button class="rounded-lg bg-secondary px-8 py-2" @click="registerBtn"><span>Register</span></button>
         </div>
       </div>
     </section>
     <section>
-      <div class=" m-auto w-[80%] p-12">
+      <div class=" m-auto w-[80vw] p-3 md:p-6 lg:p-12">
         <div class="mb-7">
           <h3 class="font-bold text-2xl md:text-4xl lg:text-5xl leading-10 text-primary mb-2">What to Expect in ConTech
             2024</h3>
@@ -126,8 +126,10 @@
         </div>
       </div>
     </section>
-    <section class="bg-primary">
-      <div class="flex justify-center flex-col items-center m-auto w-[80%] md:w-[70%] lg:w-[50%] py-[120px] sm:py-[100px]">
+    <section class="bg-primary relative">
+      <img src="/src/assets/icons/Capa_7.svg" alt="capa" class="animate__animated  animate__pulse animate__infinite hidden lg:block lg:absolute top-[25vh] right-0" />
+        <img src="/src/assets/icons/Torus_1_.svg" alt="capa" class="animate__animated  animate__pulse animate__infinite hidden lg:block lg:absolute top-[45vh] left-0" />
+      <div class="flex justify-center flex-col items-center m-auto w-[80%] md:w-[70%] lg:w-[50%] py-[50px] sm:py-[100px]">
         <div>
           <h3 class="font-bold text-2xl md:text-4xl lg:text-5xl leading-10 text-secondary-shades mb-2 sm:text-center">Our Partners</h3>
           <p class="text-secondary-shades sm:text-2xl">A list of our partners for ConTech Nigeria 2024</p>
@@ -137,20 +139,24 @@
           <img src="/src/assets/icons/patner2.svg" alt=""/>
         </div>
         <div>
-          <button class="rounded-lg bg-secondary px-8 py-2"><span>Become Our patner</span></button>
+          <button @click="becomeOurPatner" class="rounded-lg bg-secondary px-8 py-2"><span>Become Our patner</span></button>
         </div>
       </div>
     </section>
-    <section class="">
-      <div class="flex justify-center flex-col items-center m-auto w-[80%] md:w-[70%] lg:w-[50%] py-[120px] sm:py-[100px]">
+    <section class="relative">
+      <img src="/src/assets/icons/Capa_3.svg" alt="capa" class="animate__animated  animate__pulse animate__infinite hidden lg:block lg:absolute bottom-[-12vh] right-[16.5vw]" />
+      <img src="/src/assets/icons/Capa_6.svg" alt="capa" class="animate__animated  animate__pulse animate__infinite hidden lg:block lg:absolute top-[5vh] right-0" />
+      <div class="flex justify-center flex-col items-center m-auto w-[80%] md:w-[70%] lg:w-[50%] py-[60px] sm:py-[100px]">
         <div>
           <h3 class="font-bold text-2xl md:text-4xl lg:text-5xl leading-10 text-primary mb-2 sm:text-center">Join Our Communities</h3>
           <p class="text-primary sm:text-2xl">The following are the expected in the event coming up</p>
         </div>
-        <div class="sm:flex justify-center mt-[40px] md:mt-[80px] lg:my-10 gap-10">
-        <button class="rounded-lg bg-secondary px-8 py-2 ml-5 sm:ml-0 mb-4 sm:mb-0"><span>Register</span></button>
-        <button class="rounded-lg border-[1px] border-secondary px-8 py-2 text-secondary ml-3 sm:ml-0"><span>For
-            Sponsorship</span></button>
+        <div class="grid grid-cols-2 mt-[40px] md:mt-[80px] lg:my-10 gap-1 sm:gap-4 md:gap-10 lg:w-[25vw] items-center">
+          <button @click="joinOurCommunity"
+                class="rounded-lg bg-primary text-secondary-shades px-2 py-2 sm:ml-0 text-xs"><span>Join Community</span></button>
+              <button 
+              @click="joinOurCommunity"
+                class="rounded-lg border-[1px] border-primary sm:px-8 py-2 text-primary sm:ml-0 text-xs text-nowrap text-center"><span>Join Volunteers</span></button>
       </div>
         <div class="flex m-auto asset md:w-[55vw] mt-10">
           <img src="/src/assets/icons/phone1.svg" class="w-[]" />
@@ -158,7 +164,7 @@
       </div>
     </section>
     <section class="bg-primary">
-      <div class="flex justify-center flex-col items-center m-auto w-[80%] md:w-[70%] lg:w-[50%] py-[120px] sm:py-[100px]">
+      <div class="flex justify-center flex-col items-center m-auto w-[80%] md:w-[70%] lg:w-[50%] py-[60px] sm:py-[100px]">
         <div>
           <h3 class="font-bold text-2xl md:text-4xl lg:text-5xl leading-10 text-secondary-shades mb-2">Everything you need to know about ConTech Nigeria 2024</h3>
           <p class="text-secondary-shades sm:text-2xl">The following are the expected in the event coming up</p>
@@ -167,7 +173,7 @@
         <div class="">
           <div class="flex justify-between items-center gap-[25vw] border-b-[0.1px] border-secondary-shades">
             <div class="my-4">
-              <h class="text-secondary-shades font-bold">Is ConTech Nigeria 2024 a free or paid event?</h>
+              <h3 class="text-secondary-shades font-bold">Is ConTech Nigeria 2024 a free or paid event?</h3>
               <p class="text-secondary-shades">ConTech Nigeria 2024 is totally free.</p>
             </div>
             <div>
@@ -176,7 +182,7 @@
           </div>
           <div class="flex justify-between items-center gap-[25vw] border-b-[0.1px] border-secondary-shades">
             <div class="my-4">
-              <h class="text-secondary-shades font-bold">Is ConTech Nigeria 2024 a free or paid event?</h>
+              <h3 class="text-secondary-shades font-bold">Is ConTech Nigeria 2024 a free or paid event?</h3>
               <p class="text-secondary-shades">ConTech Nigeria 2024 is totally free.</p>
             </div>
             <div>
@@ -185,7 +191,7 @@
           </div>
           <div class="flex justify-between items-center gap-[25vw] border-b-[0.1px] border-secondary-shades">
             <div class="my-4">
-              <h class="text-secondary-shades font-bold">Is ConTech Nigeria 2024 a free or paid event?</h>
+              <h3 class="text-secondary-shades font-bold">Is ConTech Nigeria 2024 a free or paid event?</h3>
               <p class="text-secondary-shades">ConTech Nigeria 2024 is totally free.</p>
             </div>
             <div>
@@ -194,7 +200,7 @@
           </div>
           <div class="flex justify-between items-center gap-[25vw] border-b-[0.1px] border-secondary-shades">
             <div class="my-4">
-              <h class="text-secondary-shades font-bold">Is ConTech Nigeria 2024 a free or paid event?</h>
+              <h3 class="text-secondary-shades font-bold">Is ConTech Nigeria 2024 a free or paid event?</h3>
               <p class="text-secondary-shades">ConTech Nigeria 2024 is totally free.</p>
             </div>
             <div>
@@ -203,7 +209,7 @@
           </div>
           <div class="flex justify-between items-center gap-[25vw] border-b-[0.1px] border-secondary-shades">
             <div class="my-4">
-              <h class="text-secondary-shades font-bold">Is ConTech Nigeria 2024 a free or paid event?</h>
+              <h3 class="text-secondary-shades font-bold">Is ConTech Nigeria 2024 a free or paid event?</h3>
               <p class="text-secondary-shades">ConTech Nigeria 2024 is totally free.</p>
             </div>
             <div>
@@ -213,42 +219,45 @@
         </div>
       </div>
     </section>
-    <section class="py-5 h-full lg:h-screen">
-      <div class="grid lg:grid-cols-3 gap-20 w-[90vw] lg:w-[60vw] h-full m-auto items-center">
-        <div class="relative seat rounded-b-xl">
-          <div class="absolute bottom-0 bg-primary p-18 w-full p-4" >
+    <section class="py-5 h-full lg:h-screen relative">
+      <img src="/src/assets/icons/Capa_8.svg" alt="capa" class="animate__animated  animate__pulse animate__infinite hidden lg:block lg:absolute bottom-[12vh] left-0" />
+      <img src="/src/assets/icons/Capa_9.svg" alt="capa" class="animate__animated  animate__pulse animate__infinite hidden lg:block lg:absolute bottom-[11vh] right-[6.5vw] z-10" />
+      <div class="grid lg:grid-cols-3 gap-20 w-[90vw] lg:w-[80vw] h-full m-auto items-center">
+        <div class="relative seat">
+          <div class="absolute bottom-0 bg-primary-tint rounded-b-xl p-18 w-full p-4" >
           <h3 class="text-secondary-shades font-bold text-[18px] leading-6">Book your seat at ConTech</h3>
           <p class="text-secondary-shades mb-3 font-thin">Save a seat for yourself</p>
-          <button class="rounded-lg border-[1px] border-secondary px-8 py-2 text-secondary ml-3 sm:ml-0"><span>Register Now</span></button>
+          <button @click="registerBtn" class="rounded-lg border-[1px] border-secondary px-8 py-2 text-secondary ml-3 sm:ml-0"><span>Register Now</span></button>
         </div>
         </div>
-        <div class="relative seat rounded-b-xl">
-          <div class="absolute bottom-0 bg-primary p-18 w-full p-4" >
-          <h3 class="text-secondary-shades font-bold text-[18px] leading-6">Book your seat at ConTech</h3>
-          <p class="text-secondary-shades mb-3 font-thin">Save a seat for yourself</p>
-          <button class="rounded-lg border-[1px] border-secondary px-8 py-2 text-secondary ml-3 sm:ml-0"><span>Register Now</span></button>
+        <div class="relative seatTwo">
+          <div class="absolute bottom-0 bg-primary-tint rounded-b-xl p-18 w-full p-4" >
+          <h3 class="text-secondary-shades font-bold text-[18px] leading-6">Exhibit at ConTech</h3>
+          <p class="text-secondary-shades mb-3 font-thin">Exhibit your product or business to thousands of people</p>
+          <button @click="goToSponsor('sponsors')" class="rounded-lg border-[1px] border-secondary px-8 py-2 text-secondary ml-3 sm:ml-0"><span>For Sponsorship</span></button>
         </div>
         </div>
-        <div class="relative seat rounded-b-xl">
-          <div class="absolute bottom-0 bg-primary p-18 w-full p-4" >
-          <h3 class="text-secondary-shades font-bold text-[18px] leading-6">Book your seat at ConTech</h3>
-          <p class="text-secondary-shades mb-3 font-thin">Save a seat for yourself</p>
-          <button class="rounded-lg border-[1px] border-secondary px-8 py-2 text-secondary ml-3 sm:ml-0"><span>Register Now</span></button>
+        <div class="relative seatThree">
+          <div class="absolute bottom-0 bg-primary-tint rounded-b-xl p-18 w-full p-4" >
+          <h3 class="text-secondary-shades font-bold text-[18px] leading-6">Become a Community Member</h3>
+          <p class="text-secondary-shades mb-3 font-thin">Join our community</p>
+          <button @click="joinOurCommunity" class="rounded-lg border-[1px] border-secondary px-8 py-2 text-secondary ml-3 sm:ml-0"><span>Register Now</span></button>
         </div>
         </div>
       </div>
     </section>
-  </main>
 </template>
 
 
 <script lang="ts">
 import { defineComponent, ref } from "vue";
-
+import { useRouter } from 'vue-router';
 
 export default defineComponent({
   name: "HomeView",
   setup(props, ctx) {
+    console.log("welcome");
+    const router = useRouter();
     const words = ref(["Product designers", "IT Professionals", "Builders", "Software Engineers", "Product designers", "Coder", "Engineers", "AEC Academic lecturers", "Facility Managers", "Architects", "Tech Developers", "Quantity surveyors", "Solution Architects", "Quantity surveyors", "Product designers", "IT Professionals", "Builders", "Software Engineers", "Product designers", "Coder", "Engineers", "AEC Academic lecturers", "Facility Managers", "Architects", "Tech Developers", "Quantity surveyors", "Solution Architects", "Quantity surveyors"]);
     const randomPosition = () => {
       return Math.floor(Math.random() * 250) + 'px'; // Adjust the range as needed
@@ -257,10 +266,30 @@ export default defineComponent({
       return '#' + Math.floor(Math.random() * 16777215).toString(16); // Generates random hex color
     }
 
+    const registerBtn = () => {
+      console.log("jelo");
+      let url = "https://www.eventbrite.com/e/contech-nigeria-2024-tickets-906636854237?aff=oddtdtcreator";
+            window.open(url, '_blank');
+    }
+    const becomeOurPatner = () => {
+      router.push("/patners")
+    }
+    const joinOurCommunity = () => {
+      let url = "https://docs.google.com/forms/d/e/1FAIpQLSfDfabGqgCnItd0Xx6ucW2SVd68GdigIW3ebKJMRDl__exqXw/viewform";
+            window.open(url, '_blank');
+    }
+    const goToSponsor = (sectionId: any) => {
+      console.log("jelo", sectionId);
+      router.push({ name: 'patners', hash: `#${sectionId}` });
+    }
     return {
       words,
       randomPosition,
       randomColor,
+      registerBtn,
+      goToSponsor,
+      becomeOurPatner,
+      joinOurCommunity,
     }
   },
 })
@@ -280,8 +309,30 @@ export default defineComponent({
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh;
-  border-bottom-left-radius: 0%;
+  height: 60vh;
+  border-bottom-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem/* 12px */;
+  /* border-bottom-left-radius: 0.75rem12px; */
+  /* margin: auto; */
+}
+.seatTwo {
+  background-image: url("/src/assets/icons/seat2.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  border-bottom-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem/* 12px */;
+  /* border-bottom-left-radius: 0.75rem12px; */
+  /* margin: auto; */
+}
+.seatThree {
+  background-image: url("/src/assets/icons/seat3.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  border-bottom-left-radius: 0.75rem;
   border-bottom-right-radius: 0.75rem/* 12px */;
   /* border-bottom-left-radius: 0.75rem12px; */
   /* margin: auto; */

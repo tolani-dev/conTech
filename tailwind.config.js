@@ -9,7 +9,7 @@ export const theme = {
       primary: {
         shades: "#211A41",
         DEFAULT: "#2C2256", //
-        tint: "#3359de1a",
+        tint: "#493991",
       },
 
       secondary: {
