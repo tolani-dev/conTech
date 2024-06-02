@@ -19,6 +19,24 @@
       <img src="/src/assets/icons/divider3.svg" alt="divider" class="z-10 object-contain" />
     <img src="/src/assets/icons/divider4.svg" alt="divider" class="h-fit w-2" />
     </div> -->
+    <div class="pt-20 hidden md:block">
+      <div
+        class="w-[100vw] h-[7vh] flex-shrink-0 absolute bottom-[0vh] z-10 transform rotate-[4deg]  bg-primary-shades  flex items-center overflow-hidden">
+        <div v-for="x in [1,2,3,4,5,6,7,8,9]" :key="x" class="px-7 whitespace-nowrap will-change-transform justify-between gap-4  flex-row animate-marquee flex items-center">
+          <img src="/src/assets/icons/logo4.svg" class="" />
+          <img src="/src/assets/icons/star.svg" class="w-5" />
+          
+        </div>
+      </div>
+      <div
+        class="w-[100vw] h-[7vh] flex-shrink-0 absolute bottom-[0vh] z-10  rotate-[-4deg] bg-primary-shades flex items-center overflow-hidden">
+        <div v-for="x in [1, 2, 3, 4, 5, 6, 7, 8, 9]" :key="x"
+          class="px-7 whitespace-nowrap will-change-transform justify-between gap-4  flex-row animate-marquee2 flex items-center">
+          <img src="/src/assets/icons/logo4.svg" class="" />
+          <img src="/src/assets/icons/star.svg" class="w-5" />
+        </div>
+      </div>
+    </div>
   </section>
   <!-- <section class="bg-primary relative">
     <img src="/src/assets/icons/Capa_1.svg" alt="capa" class="animate__animated  animate__pulse animate__infinite hidden lg:block lg:absolute top-[30%] right-[-3%]" />
@@ -424,4 +442,29 @@ iframe {
   /* border-bottom-left-radius: 0.75rem12px; */
   /* margin: auto; */
 }
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes marquee2 {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-marquee2 {
+  animation: marquee2 32s linear infinite;
+}
+
 </style>

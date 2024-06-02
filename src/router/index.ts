@@ -9,8 +9,8 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/patners',
-    name: 'patners',
+    path: '/partner',
+    name: 'partner',
     component: () => import('../views/SponsorView.vue')
   },
   {

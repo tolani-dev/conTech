@@ -1,10 +1,9 @@
 <template>
   <header v-if="route.meta" class="w-full bg-primary fixed mb-20 top-0 z-30 left-0 right-0 lg:shadow-xl rounded-b">
-
     <div
       class="hidden justify-between p-5 items-center lg:container md:max-w-[100%] lg:max-w-[85%] mx-auto md:flex h-[12vh]">
       <div class="w-[80px] md:w-[120px] lg:w-[200px]">
-        <a href="/"><img src="/src/assets/icons/logo.svg" alt="logo logo" class="object-fill"></a>
+        <a href="/"><img src="/src/assets/icons/logo4.svg" alt="logo logo" class="object-fill"></a>
       </div>
       <div>
         <div class="flex items-center sm:gap-5 lg:gap-10">
@@ -21,7 +20,7 @@
           </div> -->
           <div
             class="capitalize font-semibold text-white text-sm md:text-base cursor-pointer border-b border-transparent hover:border-b-4 hover:border-secondary">
-            <a href="/patners"> Patners</a>
+            <a href="/partner"> Partner</a>
           </div>
           <div
             class="bg-secondary text-primary font-semibold text-sm px-5 py-2 rounded-lg capitalize cursor-pointer hover:bg-indigo">
@@ -54,7 +53,7 @@
           </div>
 
           <div class="capitalize font-semibold text-white text-sm cursor-pointer border-b border-transparent">
-            <a href="/#patners" @click="closeNav()">about us</a>
+            <a href="/#partner" @click="closeNav()">about us</a>
           </div>
 
           <div class="capitalize font-semibold text-white text-sm cursor-pointer border-b border-transparent">
@@ -100,19 +99,24 @@
           </div> -->
 
           <div class="capitalize font-semibold text-white text-sm cursor-pointer border-b border-transparent">
-            <a @click="closeNav()" href="/patners">Patners</a>
+            <a @click="closeNav()" href="/partner">Partner</a>
           </div>
           <button @click="closeNav()"
             class="bg-primary mt-5 flex justify-center items-center mx-auto text-white font-semibold text-sm px-5 py-2 rounded-lg capitalize cursor-pointer hover:bg-indigo">
-            <a href="#qr"> Register</a>
+            <a href="https://www.eventbrite.com/e/contech-nigeria-2024-tickets-906636854237?aff=oddtdtcreator"
+              target="_blank">Register</a>
           </button>
         </div>
       </div>
     </div>
 
-    <div @click="openNav" id="openNav" class="pt-5 pl-[50px] md:hidden cursor-pointer">
-      <img src="/src/assets/icons/menu.svg" alt="">
+    <div @click="openNav" id="openNav" class="py-5 px-[50px] md:hidden cursor-pointer grid grid-cols-2 w-screen gap-0">
+      <img src="/src/assets/icons/menu.svg" alt="menu">
+      <img src="/src/assets/icons/logo4.svg" alt="logo" class="object-cover" />
     </div>
+    <!-- <div @click="openNav" id="openNav" class="pt-5 pl-[50px] md:hidden cursor-pointer">
+      <img src="/src/assets/icons/menu.svg" alt="">
+    </div> -->
   </header>
   <div>
     <router-view />
@@ -150,34 +154,33 @@
           </div>
           <div class="mb-10 sm:mb-0">
             <h3 class="text-secondary-shades font-bold lg:mb-4">Menu</h3>
-            <p class="text-secondary-shades text-xs md:text-lg">Home</p>
-            <p class="text-secondary-shades text-xs md:text-lg">Contact</p>
+            <p class="text-secondary-shades text-xs md:text-lg cursor-pointer">Home</p>
+            <p class="text-secondary-shades text-xs md:text-lg cursor-pointer">Contact</p>
           </div>
           <div class="">
             <h3 class="text-secondary-shades font-bold lg:mb-4">Quick Links</h3>
-            <p class="text-secondary-shades text-xs md:text-lg">Partnership</p>
-            <p class="text-secondary-shades text-xs md:text-lg">Become a Partner</p>
-            <p @click="becomeOurPatner" class="text-secondary-shades text-xs md:text-lg">Volunteer with Us</p>
-            <p @click="joinOurCommunity" class="text-secondary-shades text-xs md:text-lg">Join the Community</p>
+            <p class="text-secondary-shades text-xs md:text-lg cursor-pointer">Partnership</p>
+            <p class="text-secondary-shades text-xs md:text-lg cursor-pointer">Become a Partner</p>
+            <p @click="becomeOurPatner" class="text-secondary-shades text-xs md:text-lg cursor-pointer">Volunteer with Us</p>
+            <p @click="joinOurCommunity" class="text-secondary-shades text-xs md:text-lg cursor-pointer">Join the Community</p>
           </div>
           <div class="">
-            <h3 class="text-secondary-shades font-bold lg:mb-4">Contact Us</h3>
-            <p class="grid grid-cols-2 w-[30%] items-center"><img src="/src/assets/icons/mail.svg" alt="mail" /><span
-                class="text-secondary-shades text-[8px] sm:text-[12px] ">contech@ksdigitalinnovations.com
-                kehinde@ksdigitalinnovations.com</span></p>
+            <h3 class="text-secondary-shades font-bold lg:mb-4 cursor-pointer">Contact Us</h3>
+            <p class="grid grid-cols-2 w-[30%] items-center cursor-pointer"><img src="/src/assets/icons/mail.svg" alt="mail" /><span
+                class="text-secondary-shades text-[8px] sm:text-[12px] ">contech@ksdigitalinnovations.com</span></p>
             <div class="flex flex-row gap-4 mt-3 items-center w-full">
               <img src="/src/assets/icons/phone.svg" alt="mail" class="w-5 h-5" />
-              <div class="text-secondary-shades text-[8px] sm:text-[12px] leading-3 text-balance">
+              <div class="text-secondary-shades text-[8px] sm:text-[12px] leading-3 text-balance cursor-pointer">
                 <p>+234 706 666 4512</p>
-                <p>+234 706 666 4512</p>
-                <p>+234 706 666 4512</p>
+                <p>+234 803 214 2930</p>
+                <p>+234 810 631 0062</p>
               </div>
             </div>
           </div>
         </div>
         <!--  -->
         <div class="grid grid-cols-2 items-center lg:grid-cols-3 mt-10 sm:mt-[150px] pb-10 sm:pb-0">
-          <div class="grid grid-cols-4 w-[30vw] sm:w-[20vw] md:w-[10vw]">
+          <div class="grid grid-cols-4 w-[30vw] sm:w-[20vw] md:w-[10vw] cursor-pointer">
             <img src="/src/assets/icons/facebook.svg" alt="facebook" />
             <img src="/src/assets/icons/linkedIn.svg" alt="linkedIn" />
             <img src="/src/assets/icons/instagram.svg" alt="instagram" />
@@ -215,10 +218,10 @@ export default defineComponent({
     }
     const goToSponsor = (sectionId: any) => {
       console.log("jelo", sectionId);
-      router.push({ name: 'patners', hash: `#${sectionId}` });
+      router.push({ name: 'partner', hash: `#${sectionId}` });
     }
     const becomeOurPatner = () => {
-      router.push("/patners")
+      router.push("/partner")
     }
     const joinOurCommunity = () => {
       let url = "https://docs.google.com/forms/d/e/1FAIpQLSfDfabGqgCnItd0Xx6ucW2SVd68GdigIW3ebKJMRDl__exqXw/viewform";
