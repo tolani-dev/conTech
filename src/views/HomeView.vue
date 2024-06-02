@@ -59,10 +59,11 @@
     <div class="pt-20 hidden md:block">
       <div
         class="w-[100vw] h-[7vh] flex-shrink-0 absolute bottom-[0vh] z-10 transform rotate-[4deg]  bg-primary-shades  flex items-center overflow-hidden">
-        <div v-for="x in [1,2,3,4,5,6,7,8,9]" :key="x" class="px-7 whitespace-nowrap will-change-transform justify-between gap-4  flex-row animate-marquee flex items-center">
+        <div v-for="x in [1, 2, 3, 4, 5, 6, 7, 8, 9]" :key="x"
+          class="px-7 whitespace-nowrap will-change-transform justify-between gap-4  flex-row animate-marquee flex items-center">
           <img src="/src/assets/icons/logo4.svg" class="" />
           <img src="/src/assets/icons/star.svg" class="w-5" />
-          
+
         </div>
       </div>
       <div
@@ -77,7 +78,7 @@
     <!-- <div class="track-wrapper">
       <div class="road-container road-container-1"><div class="road-track-wrapper"><img src="/src/assets/icons/divider2.svg" alt="Road Track" class="road-track fr-fic fr-dii">&nbsp;<img src="/src/assets/icons/divider2.svg" alt="Road Track" class="road-track fr-fic fr-dii"></div></div>
     </div> -->
-  
+
   </section>
   <section class="bg-primary pt-[100x] relative">
     <img src="/src/assets/icons/Capa_6.svg" alt="capa"
@@ -155,7 +156,8 @@
         </div>
         <div class="w-full relative">
           <img src="/src/assets/icons/expect3.svg" alt="expect" class="w-full" />
-          <div class="bg-secondary p-5 text-center rounded-b-lg absolute bottom-0 w-full h-[10vh]">Brainstorming sessions
+          <div class="bg-secondary p-5 text-center rounded-b-lg absolute bottom-0 w-full h-[10vh]">Brainstorming
+            sessions
           </div>
         </div>
         <div class="w-full relative">
@@ -221,16 +223,16 @@
       <div class="">
         <!--  -->
         <div v-for="(item, index) in  whatToKnow " :key="index"
-          class="w-[80vw] md:w-[70vw] lg:w-[50vw] flex justify-between gap-10 items-center border-b-[0.1px] border-secondary-shades">
-          <div class="my-4">
+          class="w-[80vw] md:w-[70vw] lg:w-[50vw] flex justify-between gap-20 items-center border-b-[0.1px] border-secondary-shades">
+          <div class="my-4 w-[85vw]">
             <h3 class="text-secondary-shades font-bold">{{ item.title }}</h3>
             <p v-if="item.isOpen == true" class="text-secondary-shades" :class="item.isOpen
         ? 'animate__animated animate__slideInDown'
         : 'animate__animated animate__slideOutDown'">{{ item.subtitle }}</p>
           </div>
-          <div @click="toggleIsOpen(index)">
+          <div @click="toggleIsOpen(index)" class="w-[15vw]">
             <img v-if="item.isOpen" src="/src/assets/icons/hide.svg" alt="hide" class="w-10 h-5" />
-        <img v-else src =" /src/assets/icons/show.svg" alt="hide" class="w-10 h-5" />
+            <img v-else src=" /src/assets/icons/show.svg" alt="hide" class="w-10 h-5" />
           </div>
         </div>
       </div>
@@ -246,7 +248,7 @@
         <div class="absolute bottom-0 bg-primary-tint rounded-b-xl p-18 w-full p-4 ">
           <h3 class="text-secondary-shades font-bold text-[18px] leading-6">Book your seat at ConTech</h3>
           <p class="text-secondary-shades mb-3 font-thin">Save a seat for yourself</p>
-          <button @click=" registerBtn "
+          <button @click="registerBtn"
             class="rounded-lg border-[1px] border-secondary px-8 py-2 text-secondary ml-3 sm:ml-0"><span>Register
               Now</span></button>
         </div>
@@ -264,7 +266,7 @@
         <div class="absolute bottom-0 bg-primary-tint rounded-b-xl p-18 w-full p-4 ">
           <h3 class="text-secondary-shades font-bold text-[18px] leading-6">Become a Community Member</h3>
           <p class="text-secondary-shades mb-3 font-thin">Join our community</p>
-          <button @click=" joinOurCommunity "
+          <button @click="joinOurCommunity"
             class="rounded-lg border-[1px] border-secondary px-8 py-2 text-secondary ml-3 sm:ml-0"><span>Register
               Now</span></button>
         </div>
@@ -308,7 +310,7 @@ export default defineComponent({
       router.push({ name: 'partner', hash: `#${sectionId}` });
     }
     const whatToKnow = ref([
-    {
+      {
         title: 'Is ConTech Nigeria 2024 a free or paid event?',
         subtitle: 'ConTech Nigeria 2024 is totally free.',
         isOpen: false,
@@ -360,9 +362,11 @@ export default defineComponent({
 </script>
 
 <style scoped>
-        .transparent-image {
-            opacity: 0.5; /* Adjust the value between 0 and 1, where 1 is fully opaque and 0 is fully transparent */
-        }
+.transparent-image {
+  opacity: 0.5;
+  /* Adjust the value between 0 and 1, where 1 is fully opaque and 0 is fully transparent */
+}
+
 .will-change-transform {
   /* will-change: transform; */
 }
@@ -370,14 +374,17 @@ export default defineComponent({
 .animate-marquee {
   animation: marquee 25s linear infinite;
 }
+
 @keyframes marquee {
   0% {
     transform: translateX(100%);
   }
+
   100% {
     transform: translateX(0%);
   }
 }
+
 @keyframes marquee2 {
   0% {
     transform: translateX(0%);
@@ -494,6 +501,4 @@ export default defineComponent({
   background-repeat: no-repeat;
   background-size: contain;
 }
-
-
 </style>
