@@ -308,36 +308,36 @@ export default defineComponent({
       router.push({ name: 'partner', hash: `#${sectionId}` });
     }
     const whatToKnow = ref([
-      {
+    {
         title: 'Is ConTech Nigeria 2024 a free or paid event?',
         subtitle: 'ConTech Nigeria 2024 is totally free.',
         isOpen: false,
       },
       {
-        title: 'Is ConTech Nigeria 2024 a free or paid event?',
-        subtitle: 'ConTech Nigeria 2024 is totally free.',
+        title: 'Is ConTech Nigeria an organisation?',
+        subtitle: 'No, ConTech Nigeria is not an organisation. It is an ecosystem which is being pushed proudly by KS Digital Innovations and other progressive innovators in Nigeria to foster the development of exportable homegrown technological solutions in the AEC industry.',
         isOpen: false,
       },
       {
-        title: 'Is ConTech Nigeria 2024 a free or paid event?',
-        subtitle: 'ConTech Nigeria 2024 is totally free.',
+        title: 'Is ConTech Nigeria 2024 a one time event?',
+        subtitle: 'ConTech Nigeria 2024 is a one time event but many more events will be organised by KS Digital Innovations to further enrich the ConTech ecosystem in Nigeria.',
         isOpen: false,
       },
       {
-        title: 'Is ConTech Nigeria 2024 a free or paid event?',
-        subtitle: 'ConTech Nigeria 2024 is totally free.',
+        title: 'What is the role of KS Digital Innovations in ConTech Nigeria?',
+        subtitle: 'KS Digital Innovations is a ConTech startup that made a bold decision to spearhead the popularity and growth of ConTech in Nigeria.',
         isOpen: false,
       },
-      {
-        title: 'Is ConTech Nigeria 2024 a free or paid event?',
-        subtitle: 'ConTech Nigeria 2024 is totally free.',
-        isOpen: false,
-      },
-      {
-        title: 'Is ConTech Nigeria 2024 a free or paid event?',
-        subtitle: 'ConTech Nigeria 2024 is totally free.',
-        isOpen: false,
-      },
+      // {
+      //   title: 'Is ConTech Nigeria 2024 a free or paid event?',
+      //   subtitle: 'ConTech Nigeria 2024 is totally free.',
+      //   isOpen: false,
+      // },
+      // {
+      //   title: 'Is ConTech Nigeria 2024 a free or paid event?',
+      //   subtitle: 'ConTech Nigeria 2024 is totally free.',
+      //   isOpen: false,
+      // },
     ])
     const toggleIsOpen = (index: any) => {
       console.log("index", index)
