@@ -221,7 +221,7 @@
       <div class="">
         <!--  -->
         <div v-for="(item, index) in  whatToKnow " :key="index"
-          class="flex justify-between items-center gap-[25vw] border-b-[0.1px] border-secondary-shades">
+          class="w-[80vw] md:w-[70vw] lg:w-[50vw] flex justify-between gap-10 items-center border-b-[0.1px] border-secondary-shades">
           <div class="my-4">
             <h3 class="text-secondary-shades font-bold">{{ item.title }}</h3>
             <p v-if="item.isOpen == true" class="text-secondary-shades" :class="item.isOpen
@@ -229,8 +229,8 @@
         : 'animate__animated animate__slideOutDown'">{{ item.subtitle }}</p>
           </div>
           <div @click="toggleIsOpen(index)">
-            <img v-if="item.isOpen" src="/src/assets/icons/hide.svg" alt="hide" class="w-5 h-5" />
-        <img v-else src =" /src/assets/icons/show.svg" alt="hide" class="w-5 h-5" />
+            <img v-if="item.isOpen" src="/src/assets/icons/hide.svg" alt="hide" class="w-10 h-5" />
+        <img v-else src =" /src/assets/icons/show.svg" alt="hide" class="w-10 h-5" />
           </div>
         </div>
       </div>
