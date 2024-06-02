@@ -106,7 +106,7 @@
             </div>
             <div class="bg-primary-shades rounded-[15px]">
               <div class="p-10 w-[95%] m-auto items-center flex flex-col text-center h-full">
-                <img src="/src/assets/icons/ignite.svg" alt="ignite" class="w-20 h-20" />
+                <img src="/src/assets/icons/accelerate.svg" alt="ignite" class="w-20 h-20" />
                 <p class="text-secondary-shades">Accelerating collaboration between homegrown tech developers,
                   startups, industry professionals and potential users
                 </p>
@@ -116,7 +116,7 @@
           <div class="grid grid-flow-row gap-4">
             <div class="bg-primary-shades rounded-[15px] w-full">
               <div class="p-10 w-[95%] m-auto items-center flex flex-col text-center h-full">
-                <img src="/src/assets/icons/ignite.svg" alt="ignite" class="w-20 h-20" />
+                <img src="/src/assets/icons/showcasing.svg" alt="ignite" class="w-20 h-20" />
                 <p class="text-secondary-shades">Showcasing cutting edge innovation and emerging technology in
                   response to challenges in the construction industry in Nigeria
                 </p>
@@ -124,7 +124,7 @@
             </div>
             <div class="bg-primary-shades rounded-[15px] w-full">
               <div class="p-10 w-[95%] m-auto items-center flex flex-col text-center h-full">
-                <img src="/src/assets/icons/ignite.svg" alt="ignite" class="w-20 h-20" />
+                <img src="/src/assets/icons/empower.svg" alt="ignite" class="w-20 h-20" />
                 <p class="text-secondary-shades">Empowering local talent to sustain a thriving ConTech ecosystem.
                 </p>
               </div>
