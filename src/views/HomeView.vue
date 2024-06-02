@@ -147,20 +147,20 @@
       <div class="grid grids-col-1 sm:grid-cols-2 lg:grid-cols-4 gap-20">
         <div class="w-full relative">
           <img src="/src/assets/icons/expect1.svg" alt="expect" class="w-full" />
-          <div class="bg-secondary p-5 text-center rounded-b-lg absolute bottom-0 w-full h-[9vh]">Master Classes</div>
+          <div class="bg-secondary p-5 text-center rounded-b-lg absolute bottom-0 w-full h-[10vh]">Master Classes</div>
         </div>
         <div class="w-full relative">
           <img src="/src/assets/icons/expect2.svg" alt="expect" class="w-full" />
-          <div class="bg-secondary p-5 text-center rounded-b-lg absolute bottom-0 w-full h-[9vh]">Lightning Talks</div>
+          <div class="bg-secondary p-5 text-center rounded-b-lg absolute bottom-0 w-full h-[10vh]">Lightning Talks</div>
         </div>
         <div class="w-full relative">
           <img src="/src/assets/icons/expect3.svg" alt="expect" class="w-full" />
-          <div class="bg-secondary p-5 text-center rounded-b-lg absolute bottom-0 w-full h-[9vh]">Brainstorming sessions
+          <div class="bg-secondary p-5 text-center rounded-b-lg absolute bottom-0 w-full h-[10vh]">Brainstorming sessions
           </div>
         </div>
         <div class="w-full relative">
           <img src="/src/assets/icons/expect4.svg" alt="expect" class="w-full" />
-          <div class="bg-secondary p-5 text-center rounded-b-lg absolute bottom-0 w-full h-[9vh]">Panel sessions</div>
+          <div class="bg-secondary p-5 text-center rounded-b-lg absolute bottom-0 w-full h-[10vh]">Panel sessions</div>
         </div>
       </div>
     </div>
@@ -182,7 +182,7 @@
       </div>
       <div>
         <button @click="becomeOurPatner" class="rounded-lg bg-secondary px-8 py-2"><span>Become Our
-            patner</span></button>
+            Partner</span></button>
       </div>
     </div>
   </section>
@@ -241,9 +241,9 @@
       class="animate__animated  animate__pulse animate__infinite hidden lg:block lg:absolute bottom-[12vh] left-0" />
     <img src="/src/assets/icons/Capa_9.svg" alt="capa"
       class="animate__animated  animate__pulse animate__infinite hidden lg:block lg:absolute bottom-[11vh] right-[6.5vw] z-10" />
-    <div class="grid lg:grid-cols-3 w-[90vw] lg:w-[80vw] h-full m-auto items-center">
+    <div class="grid lg:grid-cols-3 w-[90vw] lg:w-[80vw] h-full m-auto items-center gap-20">
       <div class="relative seat">
-        <div class="absolute bottom-0 bg-primary-tint rounded-b-xl p-18 w-full p-4 h-[20vh]">
+        <div class="absolute bottom-0 bg-primary-tint rounded-b-xl p-18 w-full p-4 ">
           <h3 class="text-secondary-shades font-bold text-[18px] leading-6">Book your seat at ConTech</h3>
           <p class="text-secondary-shades mb-3 font-thin">Save a seat for yourself</p>
           <button @click=" registerBtn "
@@ -252,7 +252,7 @@
         </div>
       </div>
       <div class="relative seatTwo">
-        <div class="absolute bottom-0 bg-primary-tint rounded-b-xl p-18 w-full p-4 h-[20vh]">
+        <div class="absolute bottom-0 bg-primary-tint rounded-b-xl p-18 w-full p-4 ">
           <h3 class="text-secondary-shades font-bold text-[18px] leading-6">Exhibit at ConTech</h3>
           <p class="text-secondary-shades mb-3 font-thin">Exhibit your product or business to thousands of people</p>
           <button @click="goToSponsor('sponsors')"
@@ -261,7 +261,7 @@
         </div>
       </div>
       <div class="relative seatThree">
-        <div class="absolute bottom-0 bg-primary-tint rounded-b-xl p-18 w-full p-4 h-[20vh]">
+        <div class="absolute bottom-0 bg-primary-tint rounded-b-xl p-18 w-full p-4 ">
           <h3 class="text-secondary-shades font-bold text-[18px] leading-6">Become a Community Member</h3>
           <p class="text-secondary-shades mb-3 font-thin">Join our community</p>
           <button @click=" joinOurCommunity "
