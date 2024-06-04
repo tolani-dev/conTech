@@ -1,7 +1,7 @@
 <template>
-  <header v-if="route.meta" class="w-full bg-primary fixed mb-20 top-0 z-30 left-0 right-0 lg:shadow-xl rounded-b">
+  <header v-if="route.meta" class="w-full bg-primary fixed top-0 z-30 left-0 right-0 lg:shadow-xl rounded-b mb-20 ">
     <div
-      class="hidden justify-between p-5 items-center lg:container md:max-w-[100%] lg:max-w-[85%] mx-auto md:flex h-[12vh]">
+      class="hidden justify-between items-center lg:container p-5 md:max-w-[100%] lg:max-w-[85%] mx-auto md:flex h-[12vh]">
       <div class="w-[80px] md:w-[120px] lg:w-[200px]">
         <a href="/"><img src="/src/assets/icons/logo4.svg" alt="logo logo" class="object-fill"></a>
       </div>
