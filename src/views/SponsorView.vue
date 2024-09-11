@@ -367,7 +367,7 @@ export default defineComponent({
     const router = useRouter();
     const registerBtn = () => {
       console.log("jelo");
-      let url = "https://www.eventbrite.com/e/contech-nigeria-2024-tickets-906636854237?aff=oddtdtcreator";
+      let url = "https://www.eventbrite.com/e/contech-nigeria-2024-tickets-1013876631297?aff=oddtdtcreator";
       window.open(url, '_blank');
     }
     const goToSponsor = (sectionId: any) => {

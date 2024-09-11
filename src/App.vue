@@ -24,7 +24,7 @@
           </div>
           <div
             class="bg-secondary text-primary font-semibold text-sm px-5 py-2 rounded-lg capitalize cursor-pointer hover:bg-indigo">
-            <a href="https://www.eventbrite.com/e/contech-nigeria-2024-tickets-906636854237?aff=oddtdtcreator"
+            <a href="https://www.eventbrite.com/e/contech-nigeria-2024-tickets-1013876631297?aff=oddtdtcreator"
               target="_blank">Register</a>
           </div>
         </div>
